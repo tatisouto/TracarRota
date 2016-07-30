@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>MAPS API - Rota</title>
+    </head>
+ 
+    <body>
+    <div class="form-group"> 
+        <label>Digite Origem: </label>
+        <input type="Text"  class="form-control"  id="Origem" placeholder="Digite Origem" />   
+    </div>
+    <br>
+    <div class="form-group"> 
+        <label>Digite Destino: </label>
+        <input type="Text" class="form-control" id="Destino" placeholder="Digite Destino" />   
+    </div>
+
+    <div class="form-group">     
+        <button type="button" class="btn btn-default" onclick="CalcularRota()">Pesquisar
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></button>
+    </div>
+
+
+     <div id="map" style="height: 500px; width: 700px">
+        </div>
+ 
+
+       
+
+    </body>
+</html>
+
+
+ 		<script src="js/jquery.min.js"></script>
+ 		
+        <!-- Maps API Javascript -->        
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=[addkey]&callback=initMap"></script>
+
+        <!-- Arquivo de inicialização do mapa -->       
+        <script src="js/mapa.js"></script>
+
+         <script src="js/bootstrap.min"></script>
+
+         <link rel="stylesheet" href="css/bootstrap.min.css">
